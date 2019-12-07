@@ -50,7 +50,7 @@ export default {
   //   }
   // }
 
-  // vue 中的写法 - 页面刷新内容会有闪烁
+  // vue 中的原始写法(借助声明周期) - 页面刷新内容会有闪烁
 //   async mounted() {
 //     const self = this
 //     const res = await axios.get('/city/list')
