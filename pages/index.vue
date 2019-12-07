@@ -9,9 +9,6 @@
     <nuxt-link class="button" to="/about">
       About page
     </nuxt-link>
-     <nuxt-link class="button" to="/search">
-      search page
-    </nuxt-link>
   </section>
 </template>
 

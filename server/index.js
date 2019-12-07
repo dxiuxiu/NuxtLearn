@@ -1,8 +1,5 @@
 import Koa from 'koa'
 import { Nuxt, Builder } from 'nuxt'
-
-import cityInterface from './interface/city'
-
 async function start() {
   const app = new Koa()
   const host = process.env.HOST || '127.0.0.1'
@@ -20,8 +17,6 @@ async function start() {
     const builder = new Builder(nuxt)
     await builder.build()
   }
-
-  app.use(cityInterface.routes()).use(cityInterface.allowedMethods())
 
   app.use(ctx => {
     ctx.status = 200
